@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "project_id": 0,
+    "chapter_id": 0,
+    "name": "Discovery in the Temple",
+    "filename": "CHAPTER_1_SCENE_1_Discovery_in_the_Temple.md",
+    "position": 1,
+    "description": "A group of explorers find an ancient relic in the depths of the Ancient Temple.",
+    "status": "finished",
+    "locations": [],
+    "characters": []
+  },
+  {
+    "id": 2,
+    "project_id": 0,
+    "chapter_id": 0,
+    "name": "Bringing the Relic to the King",
+    "filename": "CHAPTER_1_SCENE_2_Bringing_the_Relic_to_the_King.md",
+    "position": 2,
+    "description": "The explorers bring the relic to King Sharkon at the Royal Palace.",
+    "status": "writing",
+    "locations": [],
+    "characters": []
+  },
+  {
+    "id": 3,
+    "project_id": 0,
+    "chapter_id": 1,
+    "name": "The Royal Court Debates",
+    "filename": "CHAPTER_2_SCENE_1_The_Royal_Court_Debates.md",
+    "position": 1,
+    "description": "King Sharkon and his advisors debate the implications of the relic.",
+    "status": "outlined",
+    "locations": [],
+    "characters": []
+  },
+  {
+    "id": 4,
+    "project_id": 0,
+    "chapter_id": 1,
+    "name": "Marlin's Warning",
+    "filename": "CHAPTER_2_SCENE_2_Marlin's_Warning.md",
+    "position": 2,
+    "description": "Marlin warns King Sharkon and the Royal Court about the dangers associated with the relic.",
+    "status": "concept",
+    "locations": [],
+    "characters": []
+  }
+]

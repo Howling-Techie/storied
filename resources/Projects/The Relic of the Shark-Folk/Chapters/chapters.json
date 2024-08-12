@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "project_id": 0,
+    "name": "The Discovery",
+    "filename": "CHAPTER_1_The_Discovery.md",
+    "position": 1,
+    "description": "The shark-folk discover an ancient relic in the depths of the ocean."
+  },
+  {
+    "id": 1,
+    "project_id": 0,
+    "name": "Political Turmoil",
+    "filename": "CHAPTER_2_Political_Turmoil.md",
+    "position": 2,
+    "description": "Debate ensues within the royal court about what to do with the relic."
+  }
+]

@@ -1,0 +1,183 @@
+[
+  {
+    "id": 0,
+    "project_id": 0,
+    "name": "Marlin",
+    "filename": "Marlin.md",
+    "role": "Lead Explorer",
+    "description": "Marlin is a seasoned veteran explorer known for his bravery and keen sense of discovery.",
+    "text": null,
+    "icon": "🗺️",
+    "traits": [
+      {
+        "icon": "❤️‍🔥",
+        "trait": "Brave"
+      },
+      {
+        "icon": "🧠",
+        "trait": "Wise"
+      },
+      {
+        "icon": "🌟",
+        "trait": "Natural Leader"
+      }
+    ],
+    "relationships": [
+      {
+        "character": {
+          "name": "King Sharkon",
+          "id": 1
+        },
+        "type": "Trusted Advisor"
+      },
+      {
+        "character": {
+          "name": "Princess Sharla",
+          "id": 2
+        },
+        "type": "Mentor"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "project_id": 0,
+    "name": "King Sharkon",
+    "filename": "King_Sharkon.md",
+    "role": "King",
+    "description": "King Sharkon is the wise and powerful ruler of the shark-folk kingdom.",
+    "text": null,
+    "icon": "👑",
+    "traits": [
+      {
+        "icon": "🧠",
+        "trait": "Wise"
+      },
+      {
+        "icon": "💪",
+        "trait": "Strong"
+      },
+      {
+        "icon": "⚖️",
+        "trait": "Just"
+      }
+    ],
+    "relationships": [
+      {
+        "character": {
+          "name": "Princess Sharla",
+          "id": 2
+        },
+        "type": "Father"
+      },
+      {
+        "character": {
+          "name": "Marlin",
+          "id": 0
+        },
+        "type": "Trusted Advisor"
+      },
+      {
+        "character": {
+          "name": "Advisor Finley",
+          "id": 3
+        },
+        "type": "Political Ally"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "project_id": 0,
+    "name": "Princess Sharla",
+    "filename": "Princess_Sharla.md",
+    "role": "Princess",
+    "description": "Princess Sharla is the intelligent and compassionate daughter of King Sharkon.",
+    "text": null,
+    "icon": "👸",
+    "traits": [
+      {
+        "icon": "🧠",
+        "trait": "Intelligent"
+      },
+      {
+        "icon": "❤️",
+        "trait": "Compassionate"
+      },
+      {
+        "icon": "⚠️",
+        "trait": "Cautious"
+      }
+    ],
+    "relationships": [
+      {
+        "character": {
+          "name": "King Sharkon",
+          "id": 1
+        },
+        "type": "Daughter"
+      },
+      {
+        "character": {
+          "name": "Marlin",
+          "id": 0
+        },
+        "type": "Mentor"
+      },
+      {
+        "character": {
+          "name": "Advisor Finley",
+          "id": 3
+        },
+        "type": "Political Rival"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "project_id": 0,
+    "name": "Advisor Finley",
+    "filename": "Advisor_Finley.md",
+    "role": "Advisor",
+    "description": "Advisor Finley is a shrewd and ambitious political figure in the shark-folk kingdom.",
+    "text": null,
+    "icon": "🤔",
+    "traits": [
+      {
+        "icon": "🐍",
+        "trait": "Cunning"
+      },
+      {
+        "icon": "🔥",
+        "trait": "Ambitious"
+      },
+      {
+        "icon": "🗣️",
+        "trait": "Persuasive"
+      }
+    ],
+    "relationships": [
+      {
+        "character": {
+          "name": "King Sharkon",
+          "id": 1
+        },
+        "type": "Political Ally"
+      },
+      {
+        "character": {
+          "name": "Princess Sharla",
+          "id": 2
+        },
+        "type": "Political Rival"
+      },
+      {
+        "character": {
+          "name": "Marlin",
+          "id": 0
+        },
+        "type": "Respectful Rival"
+      }
+    ]
+  }
+]

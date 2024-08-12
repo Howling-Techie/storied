@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "project_id": 0,
+    "name": "Royal Palace",
+    "description": "The grand seat of power for the shark-folk kingdom, adorned with coral and pearls.",
+    "filename": "Royal_Palace.md",
+    "icon": "🏰"
+  },
+  {
+    "id": 1,
+    "project_id": 0,
+    "name": "Ancient Temple",
+    "description": "An ancient, mysterious temple filled with relics and secrets from the past.",
+    "filename": "Ancient_Temple.md",
+    "icon": "🏛️"
+  },
+  {
+    "id": 2,
+    "project_id": 0,
+    "name": "Market District",
+    "description": "A bustling area where shark-folk gather to trade goods and stories.",
+    "filename": "Market_District.md",
+    "icon": "🛍️"
+  }
+]

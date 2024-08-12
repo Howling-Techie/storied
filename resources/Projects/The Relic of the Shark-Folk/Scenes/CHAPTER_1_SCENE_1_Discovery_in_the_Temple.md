@@ -1,0 +1,2 @@
+A group of explorers find an ancient relic in the depths of the Ancient Temple. The relic glows with a strange,
+otherworldly light, and the air around it hums with energy. The explorers know they have found something extraordinary.
