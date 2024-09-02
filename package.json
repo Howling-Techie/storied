@@ -46,6 +46,7 @@
   "dependencies": {
     "@headlessui/react": "^2.1.2",
     "@mdxeditor/editor": "^3.11.0",
+    "@types/better-sqlite3": "^7.6.11",
     "better-sqlite3": "^11.1.2",
     "electron-context-menu": "^4.0.1",
     "electron-squirrel-startup": "^1.0.1",

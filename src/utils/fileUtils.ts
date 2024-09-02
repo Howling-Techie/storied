@@ -104,8 +104,8 @@ const getLocation = async (projectId: number, id: number): Promise<Location | nu
 
 const insertLocation = async (location: Omit<Location, "id" | "filename">) => {
 
-    const projectPath = path.join(await getProjectPath(location.project_id), LOCATIONS_DIR);
-    const locations = await getLocations(location.project_id);
+    const projectPath = path.join(await getProjectPath(location.world_id), LOCATIONS_DIR);
+    const locations = await getLocations(location.world_id);
     const newId = generateNextId(locations);
     const filename = `${location.name.replace(/\s+/g, "_")}.md`;
     const newLocation = {...location, id: newId, filename};
@@ -115,8 +115,8 @@ const insertLocation = async (location: Omit<Location, "id" | "filename">) => {
 };
 
 const updateLocation = async (updatedLocation: Location) => {
-    const projectPath = path.join(await getProjectPath(updatedLocation.project_id), LOCATIONS_DIR);
-    const locations = await getLocations(updatedLocation.project_id);
+    const projectPath = path.join(await getProjectPath(updatedLocation.world_id), LOCATIONS_DIR);
+    const locations = await getLocations(updatedLocation.world_id);
     const index = locations.findIndex(loc => loc.id === updatedLocation.id);
     if (index !== -1) {
         // Update the location metadata
@@ -173,8 +173,8 @@ const getCharacter = async (projectId: number, id: number): Promise<Character | 
 };
 
 const insertCharacter = async (character: Omit<Character, "id" | "filename">) => {
-    const projectPath = path.join(await getProjectPath(character.project_id), CHARACTERS_DIR);
-    const characters = await getCharacters(character.project_id);
+    const projectPath = path.join(await getProjectPath(character.world_id), CHARACTERS_DIR);
+    const characters = await getCharacters(character.world_id);
     const newId = generateNextId(characters);
     const filename = `${character.name.replace(/\s+/g, "_")}.md`;
     const newCharacter = {...character, id: newId, filename};
@@ -184,8 +184,8 @@ const insertCharacter = async (character: Omit<Character, "id" | "filename">) =>
 };
 
 const updateCharacter = async (updatedCharacter: Character) => {
-    const projectPath = path.join(await getProjectPath(updatedCharacter.project_id), CHARACTERS_DIR);
-    const characters = await getCharacters(updatedCharacter.project_id);
+    const projectPath = path.join(await getProjectPath(updatedCharacter.world_id), CHARACTERS_DIR);
+    const characters = await getCharacters(updatedCharacter.world_id);
     const index = characters.findIndex(char => char.id === updatedCharacter.id);
     if (index !== -1) {
         // Update the character metadata
@@ -242,8 +242,8 @@ const getChapter = async (projectId: number, id: number): Promise<Chapter | null
 };
 
 const insertChapter = async (chapter: Omit<Chapter, "id" | "filename">) => {
-    const projectPath = path.join(await getProjectPath(chapter.project_id), CHAPTERS_DIR);
-    const chapters = await getChapters(chapter.project_id);
+    const projectPath = path.join(await getProjectPath(chapter.world_id), CHAPTERS_DIR);
+    const chapters = await getChapters(chapter.world_id);
     const newId = generateNextId(chapters);
     const filename = `CHAPTER_${chapter.position}_${chapter.name.replace(/\s+/g, "_")}.md`;
     const newChapter = {...chapter, id: newId, filename};
@@ -253,8 +253,8 @@ const insertChapter = async (chapter: Omit<Chapter, "id" | "filename">) => {
 };
 
 const updateChapter = async (updatedChapter: Chapter) => {
-    const projectPath = path.join(await getProjectPath(updatedChapter.project_id), CHAPTERS_DIR);
-    const chapters = await getChapters(updatedChapter.project_id);
+    const projectPath = path.join(await getProjectPath(updatedChapter.world_id), CHAPTERS_DIR);
+    const chapters = await getChapters(updatedChapter.world_id);
     const index = chapters.findIndex(chap => chap.id === updatedChapter.id);
     if (index !== -1) {
         // Update the chapter metadata
@@ -333,10 +333,10 @@ const getScene = async (projectId: number, chapterId: number, id: number): Promi
 };
 
 const insertScene = async (scene: Omit<Scene, "id" | "filename">) => {
-    const projectPath = path.join(await getProjectPath(scene.project_id), SCENES_DIR);
-    const scenes = await getScenes(scene.project_id);
+    const projectPath = path.join(await getProjectPath(scene.world_id), SCENES_DIR);
+    const scenes = await getScenes(scene.world_id);
     const newId = generateNextId(scenes);
-    const chapterPosition = (await getChapter(scene.project_id, scene.chapter_id)).position;
+    const chapterPosition = (await getChapter(scene.world_id, scene.chapter_id)).position;
     const filename = `CHAPTER_${chapterPosition}_SCENE_${scene.position}_${scene.name.replace(/\s+/g, "_")}.md`;
     const newScene = {...scene, id: newId, filename};
     scenes.push(newScene);
@@ -345,8 +345,8 @@ const insertScene = async (scene: Omit<Scene, "id" | "filename">) => {
 };
 
 const updateScene = async (updatedScene: Scene) => {
-    const projectPath = path.join(await getProjectPath(updatedScene.project_id), SCENES_DIR);
-    const scenes = await getScenes(updatedScene.project_id);
+    const projectPath = path.join(await getProjectPath(updatedScene.world_id), SCENES_DIR);
+    const scenes = await getScenes(updatedScene.world_id);
     const index = scenes.findIndex(sc => sc.id === updatedScene.id);
     if (index !== -1) {
         // Update the scene metadata
